@@ -1,0 +1,38 @@
+<form>
+  @for (field of fields; track $index) {
+    <div class="row mb-2">
+      <label class="col-sm-{{labelLenght}} col-form-label" for="{{field.id}}">{{ field.label }}</label>
+      <div class="col-sm-{{fieldLenght}}">
+        <!-- Depending on the input type needed, we'll generate the appropriate element -->
+        @switch (field.type) {
+          <!-- The input field is a text area -->
+          @case ('textarea') {
+            <textarea class="form-control" id="{{field.id}}" [field]="field.field"></textarea>
+
+          }
+
+          <!-- The input field is a dropdown menu -->
+          @case ('select') {
+            <select class="form-select" id="{{field.id}}">
+              @for (option of field.options; track $index) {
+                <option value="{{option.value}}">{{option.text}}</option>
+              }
+
+            </select>
+
+          }
+
+
+          <!-- The input field is an input -->
+          @default {
+            <!-- Since max and min can be undefined, we can add them safely and will only apply if specified -->
+            <input class="form-control" type="{{field.type}}" id="{{field.id}}" max="{{field.max}}" min="{{field.min}}">
+
+          }
+        }
+
+      </div>
+
+    </div>
+  }
+</form>

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExtendedTextarea } from './extended-textarea';
+import { ExtendedFormField } from './extended-form-field';
 
-describe('ExtendedTextarea', () => {
-  let component: ExtendedTextarea;
-  let fixture: ComponentFixture<ExtendedTextarea>;
+describe('ExtendedFormField', () => {
+  let component: ExtendedFormField;
+  let fixture: ComponentFixture<ExtendedFormField>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ExtendedTextarea]
+      imports: [ExtendedFormField]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ExtendedTextarea);
+    fixture = TestBed.createComponent(ExtendedFormField);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

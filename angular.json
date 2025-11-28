@@ -7,6 +7,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "modulo-lunar-angular": {
+      "i18n": {
+        "sourceLocale": "es-ES",
+        "locales": {
+          "en-US": "src/locale/messages.en-US.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,6 +26,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "localize": ["es-ES"],
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -31,6 +38,9 @@
             ],
             "styles": [
               "src/styles.scss"
+            ],
+            "polyfills": [
+              "@angular/localize/init"
             ]
           },
           "configurations": {
