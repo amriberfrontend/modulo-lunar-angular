@@ -1,5 +1,5 @@
-export class ExtendedFieldBase<T> {
-  value: T | undefined;
+export class CampoBasico<T> {
+    value: T | undefined;
   key: string;
   label: string;
   required: boolean;

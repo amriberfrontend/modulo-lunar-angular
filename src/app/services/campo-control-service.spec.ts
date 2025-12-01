@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { Option } from './option';
+import { CampoControlService } from './campo-control-service';
 
-describe('Option', () => {
-  let service: Option;
+describe('CampoControlService', () => {
+  let service: CampoControlService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(Option);
+    service = TestBed.inject(CampoControlService);
   });
 
   it('should be created', () => {

@@ -1,14 +1,15 @@
 import { Component, input } from '@angular/core';
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CampoBasico } from '../../model/campo-basico';
+import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-extended-form-field',
-  imports: [ReactiveFormsModule],
-  templateUrl: './extended-form-field.html',
-  styleUrl: './extended-form-field.scss',
+  selector: 'app-reduced-form-field',
+  imports: [],
+  templateUrl: './reduced-form-field.html',
+  styleUrl: './reduced-form-field.scss',
 })
-export class ExtendedFormField {
+export class ReducedFormField {
+
 
   // What do these two do?
   // Well this defines the field, of course. (I still don't get the structure, tho)

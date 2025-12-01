@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SelectData } from './select-data';
+import { CampoService } from './campo-service';
 
-describe('SelectData', () => {
-  let service: SelectData;
+describe('CampoService', () => {
+  let service: CampoService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(SelectData);
+    service = TestBed.inject(CampoService);
   });
 
   it('should be created', () => {

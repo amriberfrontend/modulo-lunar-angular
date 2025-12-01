@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ExtendedFieldBase } from './extended-field-base';
+import { CampoBasico } from '../model/campo-basico';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ExtendedFieldService {
-  toFormGroup(fields: ExtendedFieldBase<string>[]) {
+export class CampoControlService {
+  toFormGroup(fields: CampoBasico<string>[]) {
     const group: any = {};
 
     fields.forEach((field) => {
@@ -16,5 +16,4 @@ export class ExtendedFieldService {
     });
     return new FormGroup(group);
   }
-
 }
