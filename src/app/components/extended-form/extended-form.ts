@@ -24,7 +24,6 @@ export class ExtendedForm {
   payload = '';
 
   onSubmit() {
-    
     this.payload = JSON.stringify(this.form().getRawValue());
 
 

@@ -10,9 +10,7 @@ export class CampoControlService {
     const group: any = {};
 
     fields.forEach((field) => {
-      group[field.key] = field.required
-        ? new FormControl(field.value || '', Validators.required)
-        : new FormControl(field.value || '');
+      group[field.key] = new FormControl(field.value || '');
     });
     return new FormGroup(group);
   }

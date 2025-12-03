@@ -1,11 +1,14 @@
+import { ValidatorFn } from "@angular/forms";
+
 export class CampoBasico<T> {
-    value: T | undefined;
+  value: T | undefined;
   key: string;
   label: string;
   required: boolean;
   controlType: string;
   type: string;
   options: {key: string, value: string}[];
+  validators: ValidatorFn[];
 
   constructor(
     options: {
@@ -16,6 +19,7 @@ export class CampoBasico<T> {
       controlType?: string;
       type?: string;
       options?: {key: string, value: string}[];
+      validators?: ValidatorFn[];
     } = {},
   ) {
     this.value = options.value;
@@ -25,5 +29,6 @@ export class CampoBasico<T> {
     this.controlType = options.controlType || '';
     this.type = options.type || '';
     this.options = options.options || [];
+    this.validators = options.validators || [];
   }
 }

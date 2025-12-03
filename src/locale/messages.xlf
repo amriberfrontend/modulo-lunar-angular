@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es-ES" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="3079007265918278830" datatype="html">
+        <source>Identificador*</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/campo-service.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9097702563039751950" datatype="html">
+        <source>Nombre*</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/services/campo-service.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

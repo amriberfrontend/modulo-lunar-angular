@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { CampoBasico } from '../model/campo-basico';
 import { CampoInput } from '../model/campo-input';
 
+
 @Injectable({
   providedIn: 'root',
 })
@@ -10,13 +11,13 @@ export class CampoService {
     const campos: CampoBasico<string>[] = [
       new CampoInput({
         key: 'identificador',
-        label: 'Identificador',
+        label: $localize`Identificador*`,
         type: 'text',
         required: true,
       }),
       new CampoInput({
         key: 'nombre',
-        label: 'Nombre',
+        label: $localize`Nombre*`,
         type: 'text',
         required: true,
       })
