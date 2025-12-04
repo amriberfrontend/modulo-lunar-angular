@@ -30,7 +30,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "localize": ["es-ES"],
+            "localize": ["en-US"],
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",

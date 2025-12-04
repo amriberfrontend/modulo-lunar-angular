@@ -1,1 +1,39 @@
-<p>reduced-form-field works!</p>
+<div class="form-floating mb-2" [formGroup]="form()">
+  @switch (campo().controlType) {
+    @case ('textbox') {
+      <input [classList]="classes" [formControlName]="campo().key" [id]="campo().key" [type]="campo().type" [min]="campo().min" [max]="campo().max">
+    }
+    @case ('dropdown') {
+      <select [classList]="classes" [id]="campo().key" [formControlName]="campo().key">
+        @for (opt of campo().options; track opt) {
+          <option [value]="opt.key">{{ opt.value }}</option>
+        }
+
+      </select>
+    }
+    @case ('textarea') {
+      <textarea [classList]="classes" [formControlName]="campo().key" [id]="campo().key"></textarea>
+    }
+  }
+
+  @if (!isValid && form().touched && form().dirty) {
+    @if (form().controls[campo().key].hasError("required")) {
+      <div class="text-danger" i18n>
+        Campo requerido
+      </div>
+    }
+
+    @if (form().controls[campo().key].hasError('pattern')) {
+      <div class="text-danger" i18n>
+        Patrón incorrecto
+      </div>
+    }
+
+    @if (form().controls[campo().key].hasError('maxlength')) {
+      <div class="text-danger" i18n>
+        Longitud superior a {{campo().maxLength}}
+      </div>
+    }
+  }
+  <label [htmlFor]="campo().key">{{ campo().label }}</label>
+</div>

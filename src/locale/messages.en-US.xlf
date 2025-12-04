@@ -3,119 +3,119 @@
   <file source-language="es-ES" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="4720082322895831668" datatype="html">
-        <source> Campo requerido </source>
+        <source> Required field </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/reduced-form-field/reduced-form-field.html</context>
           <context context-type="linenumber">22,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="173516210448559926" datatype="html">
-        <source> Patrón incorrecto </source>
+        <source> Incorrect pattern </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/reduced-form-field/reduced-form-field.html</context>
           <context context-type="linenumber">28,29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1020888868906170822" datatype="html">
-        <source> Longitud superior a <x id="INTERPOLATION" equiv-text="{{campo().maxLength}}"/> </source>
+        <source> Lenght exceeds <x id="INTERPOLATION" equiv-text="{{campo().maxLength}}"/> </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/reduced-form-field/reduced-form-field.html</context>
           <context context-type="linenumber">34,36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3463548560439960986" datatype="html">
-        <source>Identificador* (LLNNNNLL)</source>
+        <source>Identifier* (LLNNNNLL)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9097702563039751950" datatype="html">
-        <source>Nombre*</source>
+        <source>Name*</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2360846254818094644" datatype="html">
-        <source>Grupo*</source>
+        <source>Group*</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6331895624616198118" datatype="html">
-        <source>Ígnea</source>
+        <source>Igneous</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7179912174062044868" datatype="html">
-        <source>Metamórfica</source>
+        <source>Metamorphic</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3425565129594127593" datatype="html">
-        <source>Sedimentaria</source>
+        <source>Sedimentary</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5310295936209683013" datatype="html">
-        <source>Dureza (0-10)</source>
+        <source>Hardness (0-10)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4326536763666957368" datatype="html">
-        <source>Tamaño del grano</source>
+        <source>Grain size</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4484490942710609252" datatype="html">
-        <source>Muy grueso</source>
+        <source>Very coarse</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">51</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7248500298577670737" datatype="html">
-        <source>Grueso</source>
+        <source>Coarse</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2532244954635323482" datatype="html">
-        <source>Medio</source>
+        <source>Medium</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9177299270836488776" datatype="html">
-        <source>Fino</source>
+        <source>Fine</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6230277110949683828" datatype="html">
-        <source>Clasificación</source>
+        <source>Classification</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6180553489675764067" datatype="html">
-        <source>Construccion</source>
+        <source>Construction</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">61</context>
@@ -129,70 +129,70 @@
         </context-group>
       </trans-unit>
       <trans-unit id="7964794715849262253" datatype="html">
-        <source>Utesilios</source>
+        <source>Tools</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3942940273631173414" datatype="html">
-        <source>Machacar</source>
+        <source>Crush</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7775441213676904570" datatype="html">
-        <source>Tamaño de cristales (0-10)</source>
+        <source>Crystal size (0-10)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4548258560177869953" datatype="html">
-        <source>Temperatura de formación (K) (0-1500)</source>
+        <source>Forming temperature (K) (0-1500)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8178536536239362769" datatype="html">
-        <source>Estructura</source>
+        <source>Structure</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">84</context>
         </context-group>
       </trans-unit>
       <trans-unit id="428512967701778511" datatype="html">
-        <source>Forma de grano</source>
+        <source>Grain shape</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2167603186554349586" datatype="html">
-        <source>Textura*</source>
+        <source>Texture*</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4712063736358194802" datatype="html">
-        <source>Vítrea</source>
+        <source>Vitreous</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">95</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8237037398880975669" datatype="html">
-        <source>Afanítica</source>
+        <source>Aphanitic</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">96</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8209017143832407315" datatype="html">
-        <source>Fanerítica</source>
+        <source>Phaneritic</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/campo-service.ts</context>
           <context context-type="linenumber">97</context>

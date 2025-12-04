@@ -3,10 +3,10 @@
   <div class="col-sm-10">
     @switch (campo().controlType) {
       @case ('textbox') {
-        <input class="form-control" [formControlName]="campo().key" [id]="campo().key" [type]="campo().type">
+        <input [classList]="classes" [formControlName]="campo().key" [id]="campo().key" [type]="campo().type" [min]="campo().min" [max]="campo().max">
       }
       @case ('dropdown') {
-        <select class="form-select" [id]="campo().key" [formControlName]="campo().key">
+        <select [classList]="classes" [id]="campo().key" [formControlName]="campo().key">
           @for (opt of campo().options; track opt) {
             <option [value]="opt.key">{{ opt.value }}</option>
           }
@@ -14,11 +14,32 @@
         </select>
       }
       @case ('textarea') {
-        <textarea class="form-control" [formControlName]="campo().key" [id]="campo().key"></textarea>
+        <textarea [classList]="classes" [formControlName]="campo().key" [id]="campo().key"></textarea>
+      }
+      @case ('radio') {
+        
       }
     }
 
-    @if (!isValid) {}
+    @if (!isValid && form().touched && form().dirty) {
+      @if (form().controls[campo().key].hasError("required")) {
+        <div class="text-danger">
+          Campo requerido
+        </div>
+      }
+
+      @if (form().controls[campo().key].hasError('pattern')) {
+        <div class="text-danger">
+          Patrón incorrecto
+        </div>
+      }
+
+      @if (form().controls[campo().key].hasError('maxlength')) {
+        <div class="text-danger">
+          Longitud superior a {{campo().maxLength}}
+        </div>
+      }
+    }
   </div>
 
 </div>

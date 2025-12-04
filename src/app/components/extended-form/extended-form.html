@@ -1,6 +1,14 @@
 <form>
-  @for (campo of campos(); track $index) {
-    <app-extended-form-field [campo]="campo" [form]="form()"></app-extended-form-field>
+  @if (windowWidth > 992) {
+    @for (campo of campos(); track $index) {
+      <app-extended-form-field [campo]="campo" [form]="form()"></app-extended-form-field>
+    }
+
+  }
+  @else {
+    @for (campo of campos(); track $index) {
+      <app-reduced-form-field [campo]="campo" [form]="form()"></app-reduced-form-field>
+    }
   }
   <button class="btn btn-primary" (click)="onSubmit()" [disabled]="!form().valid">Submit</button>
 </form>

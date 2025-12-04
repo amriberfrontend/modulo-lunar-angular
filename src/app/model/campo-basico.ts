@@ -8,7 +8,10 @@ export class CampoBasico<T> {
   controlType: string;
   type: string;
   options: {key: string, value: string}[];
-  validators: ValidatorFn[];
+  maxLength: number | undefined;
+  min: number | undefined;
+  max: number | undefined;
+  pattern: RegExp | undefined;
 
   constructor(
     options: {
@@ -19,7 +22,10 @@ export class CampoBasico<T> {
       controlType?: string;
       type?: string;
       options?: {key: string, value: string}[];
-      validators?: ValidatorFn[];
+      maxLength?: number;
+      min?: number;
+      max?: number;
+      pattern?: RegExp;
     } = {},
   ) {
     this.value = options.value;
@@ -29,6 +35,9 @@ export class CampoBasico<T> {
     this.controlType = options.controlType || '';
     this.type = options.type || '';
     this.options = options.options || [];
-    this.validators = options.validators || [];
+    this.max = options.max;
+    this.min = options.min;
+    this.maxLength = options.maxLength;
+    this.pattern = options.pattern;
   }
 }
